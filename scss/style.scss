@@ -37,7 +37,7 @@ a {
 }
 
 .header {
- 
+
     background: url("../images/header-bg.png") 22%;
     background-color: rgba(8, 84, 108, 1);
     width: 100%;
@@ -106,6 +106,7 @@ a {
     }
 
 }
+
 #burger__menu {
     appearance: none;
     width: 80px;
@@ -257,7 +258,7 @@ $fn-size: 65px;
 .statistic__cards {
     position: absolute;
     top: 90%;
-    margin-left:60px;
+    margin-left: 60px;
     z-index: 15;
     border-radius: 30px;
     padding: 78px 218px;
@@ -268,9 +269,11 @@ $fn-size: 65px;
         display: flex;
         justify-content: space-between;
     }
-    .statistic__card{
+
+    .statistic__card {
         padding: 30px;
     }
+
     h4 {
         font-size: 24px;
         font-weight: 600;
@@ -296,12 +299,78 @@ $fn-size: 65px;
     }
 }
 
-.services{
+.services {
     margin-top: 400px;
+
+    h5 {
+        font-family: "Schoolbell", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: center;
+        color: rgba(38, 90, 106, 1);
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-left: 30%;
+        max-width: 510px;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: center;
+        color: rgba(8, 84, 108, 1);
+    }
 }
 
+.services__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 60px;
 
+    .services__card {
+        box-shadow: 0px 41.78px 33.42px 0px rgba(0, 0, 0, 0.05);
+        width: 273px;
+        height: 251px;
+        padding: 28px 30px;
 
+        img {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29.05px;
+            text-align: left;
+            color: rgba(15, 18, 33, 1);
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+            color: rgba(105, 105, 105, 1);
+        }
+
+        margin-bottom: 40px;
+
+    }
+
+}
+
+.services__card--color {
+    background-color: rgba(8, 84, 108, 1);
+}
 
 
 @media screen and (max-width: 768px) {
@@ -378,11 +447,16 @@ $fn-size: 65px;
         display: none;
     }
 
-    .statistic__cards{
+    .statistic__cards {
         padding: 25px 20px;
         margin-left: 10%;
     }
-    
+
+    .services {
+        margin-top: 200px;
+    }
+
+
 }
 
 @media screen and (max-width: 980px) {
@@ -418,11 +492,11 @@ $fn-size: 65px;
         text-align: center;
         margin-left: 10%;
     }
-    
-    .statistic__cards{
+
+    .statistic__cards {
         margin-left: 2%;
     }
-    
+
 
 }
 
@@ -481,12 +555,23 @@ $fn-size: 65px;
     }
 
 }
-@media screen and ( max-width: 800px) {
- .statistic__card--info{
-    flex-direction: column;
-    
-    width: 85vw;
- }   
+
+@media screen and (max-width: 800px) {
+    .statistic__card--info {
+        flex-direction: column;
+
+        width: 85vw;
+    }
+
+    .services {
+        margin-top: 800px;
+
+        h2 {
+            font-size: 35px;
+            margin-left: 15%;
+
+        }
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -544,12 +629,22 @@ $fn-size: 65px;
         margin: 40px auto;
     }
 
-    .statistic__cards{
+    .statistic__cards {
         margin-left: 0;
         width: 86vw;
-        h3{
+
+        h3 {
             margin-top: 20px;
         }
     }
 
+    .services {
+    margin-top: 600px;
+        h2 {
+
+            margin-left: 0;
+            text-align: left;
+            line-height: 1;
+        }
+    }
 }
