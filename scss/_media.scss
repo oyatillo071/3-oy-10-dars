@@ -1,0 +1,317 @@
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .main-section {
+        background: none;
+    }
+
+    .main {
+        padding-top: 10px;
+    }
+
+    .main__section--card {
+        margin-top: 25%;
+    }
+
+    .main__user--img {
+        display: block;
+        width: 60%;
+        margin-top: 40px;
+    }
+
+    .main__info {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main__info h1 {
+        width: 90%;
+        margin-left: 7%;
+        text-align: center;
+        font-size: 45px;
+
+        &:before {
+            left: 20px;
+        }
+    }
+
+    .main__info p {
+        max-width: 80%;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .nav ul .nav__items6 {
+        display: block !important;
+    }
+
+
+    .header-btn {
+        display: none;
+    }
+
+    .statistic__cards {
+        padding: 25px 20px;
+        margin-left: 10%;
+    }
+
+    .services {
+        margin-top: 200px;
+    }
+
+
+}
+
+@media screen and (max-width: 980px) {
+    .main-section {
+        background: none;
+    }
+
+    .main__section--card {
+        margin-top: 100px;
+    }
+
+    .main__user--img {
+        display: block;
+        width: 60%;
+        margin-top: 40px;
+    }
+
+    .main__info {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main__info h1 {
+        width: 90%;
+        margin-left: 7%;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .main__info p {
+        max-width: 80%;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .statistic__cards {
+        margin-left: 2%;
+    }
+
+
+}
+
+@media screen and (max-width: 950px) {
+    .main__user--img {
+        margin-left: 20%;
+
+    }
+
+    .main__section--card {
+        margin-left: 30%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .nav {
+        display: none;
+    }
+
+    #burger__menu {
+        display: block;
+
+        &:checked {
+            margin-right: 40%;
+        }
+    }
+
+
+    .nav {
+        ul {
+            z-index: 999;
+            flex-direction: column;
+            width: 50%;
+            height: 100vh;
+            background-color: white;
+            position: absolute;
+            right: 1%;
+            top: 0;
+            padding: 15px;
+
+            a {
+                color: rgba(8, 84, 108, 1);
+            }
+
+
+        }
+
+    }
+
+    .main__info h1 {
+        width: 80%;
+        margin-left: 7%;
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .statistic__card--info {
+        flex-direction: column;
+
+        width: 85vw;
+    }
+
+    .services {
+        margin-top: 800px;
+
+        h2 {
+            font-size: 35px;
+            margin-left: 15%;
+
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    .main__user--img {
+        margin-left: 2%;
+
+    }
+
+    .main__section--card {
+        margin-left: 2%;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .main__user--img {
+        width: 100%;
+        margin-right: 10%;
+    }
+
+
+    .main__info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main__info h1 {
+        width: 90%;
+        margin-left: 2%;
+        text-align: left;
+        line-height: 1.25;
+        font-size: 30px;
+
+        &::before {
+            width: 30%;
+            padding: 10px 15px;
+            font-size: 14px;
+            top: -60px;
+            left: 10px;
+        }
+    }
+
+    .main__info p,
+    .portfolio__card p {
+        max-width: 80%;
+        text-align: left;
+        font-size: 20px;
+        margin-left: 2%;
+    }
+
+    .main__section--card {
+        margin: 40px auto;
+    }
+
+    .statistic__cards {
+        margin-left: 0;
+        width: 86vw;
+
+        h3 {
+            margin-top: 20px;
+        }
+    }
+
+    .services {
+        margin-top: 600px;
+
+        h2 {
+
+            margin-left: 0;
+            text-align: left;
+            line-height: 1;
+        }
+    }
+
+    .portfolio__cards {
+        flex-direction: column;
+
+        .portfolio__card {
+            width: 90vw;
+        h4{
+        font-size: 20px;}
+            p {
+                width: 90%;
+                font-size: 11px;
+            }
+
+            .portfolia--img {
+                width: 90%;
+            }
+            a {
+            font-size: 15px;
+            }
+
+
+        }
+
+        margin-top: 60px;
+
+
+    }
+
+    .portfolio-title {
+        font-size: 30px;
+    }
+
+    .portfolio-disc {
+        max-width: 80%;
+        font-size: 12px;
+        line-height: 1.5;
+
+    }
+}

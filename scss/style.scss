@@ -1,5 +1,7 @@
 @import '../styles/font.css';
 @import '../styles/normalize.css';
+// @import './media';
+
 
 * {
     margin: 0;
@@ -104,6 +106,7 @@ a {
 
         }
 
+        padding-right: 20px;
 
     }
 
@@ -326,6 +329,11 @@ $fn-size: 65px;
     }
 }
 
+.portfolio {
+    margin-top: 100px;
+
+}
+
 .services__cards {
     display: flex;
     flex-wrap: wrap;
@@ -373,6 +381,80 @@ $fn-size: 65px;
 .services__card--color {
     background-color: rgba(8, 84, 108, 1);
 }
+
+.portfolio-title {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 56.25px;
+    text-align: left;
+    color: rgba(8, 84, 108, 1);
+}
+
+.portfolio-disc {
+    max-width: 50%;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: rgba(117, 117, 117, 1);
+}
+
+.portfolio__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 40px;
+    column-gap: 40px;
+    margin-top: 80px;
+
+
+}
+
+.portfolio__card {
+    width: 45%;
+    height: 588px;
+
+    .portfolia--img {
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    h4 {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 28.8px;
+        text-align: left;
+        color: rgba(8, 84, 108, 1);
+    }
+
+    p {
+        width: 70%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: rgba(117, 117, 117, 1);
+    }
+
+    a {
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25.6px;
+        text-align: left;
+        color: rgba(8, 84, 108, 1);
+        align-items: center;
+    &:hover{
+     color: rgb(20, 181, 230);}
+    }
+}
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -620,7 +702,8 @@ $fn-size: 65px;
         }
     }
 
-    .main__info p {
+    .main__info p,
+    .portfolio__card p {
         max-width: 80%;
         text-align: left;
         font-size: 20px;
@@ -641,12 +724,51 @@ $fn-size: 65px;
     }
 
     .services {
-    margin-top: 600px;
+        margin-top: 600px;
+
         h2 {
 
             margin-left: 0;
             text-align: left;
             line-height: 1;
         }
+    }
+
+    .portfolio__cards {
+        flex-direction: column;
+
+        .portfolio__card {
+            width: 90vw;
+        h4{
+        font-size: 20px;}
+            p {
+                width: 90%;
+                font-size: 11px;
+            }
+
+            .portfolia--img {
+                width: 90%;
+            }
+            a {
+            font-size: 15px;
+            }
+
+
+        }
+
+        margin-top: 60px;
+
+
+    }
+
+    .portfolio-title {
+        font-size: 30px;
+    }
+
+    .portfolio-disc {
+        max-width: 80%;
+        font-size: 12px;
+        line-height: 1.5;
+
     }
 }
